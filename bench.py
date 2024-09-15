@@ -59,7 +59,7 @@ if args.profile:
             on_trace_ready=torch.profiler.tensorboard_trace_handler('./profiler_logs/bench_log_normal'),
             record_shapes=True,
             profile_memory=True,
-            with_stack=False, # incurs an additional overhead, disable if not needed
+            with_stack=False, # incurs aqn additional overhead, disable if not needed
             with_flops=True,
             with_modules=False, # only for torchscript models atm
         ) as prof:
